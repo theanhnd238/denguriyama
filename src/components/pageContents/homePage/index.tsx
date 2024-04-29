@@ -1,8 +1,5 @@
-import Banner from "@/components/common/banner";
-import Header from "@/components/common/header";
 import { Box, Flex, Text, VStack } from "@chakra-ui/react";
 import Menu from "./menu";
-import Footer from "@/components/common/footer";
 import Commitment from "./commitment";
 import SafetyAndSecurity from "./safetyAndSecurity";
 import Restaurant from "./restaurant";

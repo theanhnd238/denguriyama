@@ -8,7 +8,7 @@ function HomePage() {
     <Box>
       <Banner url="/images/banner.png" pageName="ホーム" />
       <Box display="flex" justifyContent="center" w="100%">
-        <HomePageContent />;
+        <HomePageContent />
       </Box>
       <Footer pageName="ホーム" />
     </Box>
