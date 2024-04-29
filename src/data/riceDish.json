@@ -1,0 +1,38 @@
+{
+  "soup": {
+    "price": "",
+    "topping1": [
+      { "title": "玉子", "price": "" },
+      { "title": "わかめ", "price": "" },
+      { "title": "野菜", "price": "" },
+      { "title": "豆腐", "price": "" }
+    ],
+    "topping2": [
+      { "title": "辛口ユッケジャン", "price": "", "note": "(肉)" },
+      { "title": "辛口テクタン", "price": "", "note": "(魚)" },
+      { "title": "ごはん", "price": "" },
+      { "title": "うどん", "price": "" }
+    ]
+  },
+  "other": [
+    { "title": "石焼ビビンバ", "price": "", "subTitle": "(小白スープ付き)" },
+    { "title": "ビビンバ", "price": "", "subTitle": "(小白スープ付き)" },
+    { "title": "冷麺", "price": "", "note": "(白麺or黒麺)" },
+    { "title": "ライス", "price": "" },
+    { "title": "大ライス", "price": "" }
+  ],
+  "noodle": [
+    { "title": "豆腐チゲ", "price": "" },
+    { "title": "野菜チゲ", "price": "" },
+    { "title": "ラーメンチゲ", "price": "" }
+  ],
+  "dessert": [
+    {
+      "title": "黒糖ゼリー",
+      "price": "",
+      "subTitle": "【沖縄産を使用した手作りゼリー】"
+    },
+    { "title": "バニラアイス", "price": "" },
+    { "title": "月替わりアイス", "price": "" }
+  ]
+}

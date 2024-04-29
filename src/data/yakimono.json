@@ -1,0 +1,47 @@
+{
+  "pig": [
+    { "title": "豚トロ", "price": "" },
+    { "title": "豚ホルモン", "price": "" },
+    { "title": "ドーナッツ", "price": "" },
+    { "title": "ペラ", "price": "" },
+    { "title": "豚ナンコツ", "price": "" },
+    { "title": "コリコリ", "price": "" },
+    { "title": "ガツ元", "price": "" },
+    { "title": "カシラ", "price": "" },
+    { "title": "仔袋", "price": "" },
+    { "title": "豚タン", "price": "" }
+  ],
+  "chicken": [{ "title": "セセリ", "price": "" }],
+  "vegetable": [
+    {
+      "title": "野菜焼き盛り",
+      "price": "",
+      "note": "（小）",
+      "flexDirection": "row"
+    },
+    {
+      "title": "野菜焼き盛り",
+      "price": "",
+      "note": "（大）",
+      "flexDirection": "row"
+    },
+    { "title": "ニンニク焼き", "price": "" }
+  ],
+  "mix": [
+    { "title": "ホルモン3点盛り", "price": "" },
+    { "title": "ホルモン5点盛り", "price": "" },
+    { "title": "タン3点盛り", "price": "" }
+  ],
+  "topping": [
+    {
+      "title": "ゴマ塩ネギ",
+      "price": "",
+      "subTitle": "【塩味お肉に相性バッチリ】"
+    },
+    {
+      "title": "おろしポン酢",
+      "price": "",
+      "subTitle": "【タレ味の赤肉とご一緒に】"
+    }
+  ]
+}
