@@ -104,7 +104,7 @@ function Header({ pageName }: HeaderProps) {
               flexDirection="column"
               align="center"
               letterSpacing="4px"
-              pt="30px"
+              pt="80px"
               gap="30px 0"
               bgGradient="linear-gradient(#f7f7e8 0%,#c7cfb7 100%)"
             >
