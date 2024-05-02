@@ -174,16 +174,16 @@ function Header({ pageName }: HeaderProps) {
           店舗案内
         </Link>
       </HStack>
-      <Flex
+      <Link
         alignItems="center"
-        onClick={() => window.open("tel:0484311027")}
+        href="tel:+81484311027"
         display={{ base: "none", md: "" }}
       >
         <FaPhoneVolume fontSize="20px" />
         <Text ml="10px" fontSize="20px" fontWeight="bold">
           048−431−1027
         </Text>
-      </Flex>
+      </Link>
     </Flex>
   );
 }
