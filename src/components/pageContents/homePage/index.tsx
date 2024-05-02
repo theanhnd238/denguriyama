@@ -6,6 +6,7 @@ import Restaurant from "./restaurant";
 function HomePageContent() {
   return (
     <Box
+      maxW="1280px"
       w="80%"
       bgColor={"accent.white"}
       borderRadius="4px"
@@ -21,7 +22,7 @@ function HomePageContent() {
           p="50px 100px"
           // bgColor="#EFDBC3"
         >
-          <Text textAlign="center" fontSize="46px" mb="20px">
+          <Text textAlign="center" fontSize="42px" mb="20px">
             真心込めて、お客様をお待ちしております。
           </Text>
           <VStack alignItems="flex-start" fontSize="16px" spacing="10px">

@@ -1,16 +1,25 @@
 import {
   Box,
   Divider,
+  Drawer,
+  DrawerBody,
+  DrawerCloseButton,
+  DrawerContent,
+  DrawerHeader,
+  DrawerOverlay,
   Flex,
   HStack,
-  Icon,
+  IconButton,
   Image,
   Link,
   Text,
+  VStack,
+  useDisclosure,
 } from "@chakra-ui/react";
+import { MdMenu } from "react-icons/md";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
 import { FaPhoneVolume } from "react-icons/fa6";
+import React, { useRef } from "react";
 
 interface Menu {
   name: string;
@@ -21,7 +30,8 @@ interface HeaderProps {
 
 function Header({ pageName }: HeaderProps) {
   const router = useRouter();
-
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = useRef<HTMLDivElement>(null);
   const menu: Menu[] = [
     { name: "ホーム" },
     { name: "和牛肉" },
@@ -50,25 +60,93 @@ function Header({ pageName }: HeaderProps) {
   return (
     <Flex
       w="100%"
-      h="60px"
+      h={{ base: "40px", md: "60px" }}
       bgColor="rgba(0, 0, 0, 0.5)"
       justifyContent="space-between"
       alignItems="center"
       color="#ffffff"
-      p="0 50px"
+      p={{ base: "0 10px", md: "0 50px" }}
       position="absolute"
       top="0"
       left="0"
     >
       <Flex
-        h="80px"
+        h={{ base: "40px", md: "80px" }}
         alignItems="center"
         cursor="pointer"
         onClick={() => router.push("/")}
       >
         <Image h="70%" alt="logo" src="/images/logo.png" />
       </Flex>
-      <HStack spacing="20px">
+      <IconButton
+        isRound={true}
+        size="sm"
+        aria-label="Menu bar"
+        icon={<MdMenu color="accent.600" fontSize={"24px"} />}
+        display={{ base: "flex", md: "flex", lg: "none", xl: "none" }}
+        // ref={btnRef}
+        onClick={onOpen}
+      />
+      <Drawer
+        size="full"
+        isOpen={isOpen}
+        placement="bottom"
+        onClose={onClose}
+        // finalFocusRef={btnRef}
+      >
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <DrawerBody p="0">
+            <Flex
+              w={"100%"}
+              h={"100%"}
+              flexDirection="column"
+              align="center"
+              letterSpacing="4px"
+              pt="30px"
+              gap="30px 0"
+              bgGradient="linear-gradient(#f7f7e8 0%,#c7cfb7 100%)"
+            >
+              {menu.map((item, index) => (
+                <>
+                  <Link
+                    href={renderMenu(item.name)}
+                    key={index}
+                    fontWeight="bold"
+                    fontSize={"18px"}
+                    _hover={{ textDecoration: "none", color: "orange" }}
+                    color={item.name === pageName ? "orange" : ""}
+                    textAlign="center"
+                  >
+                    <Text>{item.name}</Text>
+                  </Link>
+                </>
+              ))}
+              <Link
+                href={"guide"}
+                fontWeight="bold"
+                fontSize={"18px"}
+                _hover={{ textDecoration: "none", color: "orange" }}
+                color={pageName === "店舗案内" ? "orange" : ""}
+                textAlign="center"
+              >
+                <Text> 店舗案内</Text>
+              </Link>
+              <Flex
+                alignItems="center"
+                onClick={() => window.open("tel:0484311027")}
+              >
+                <FaPhoneVolume fontSize="20px" />
+                <Text ml="10px" fontSize="20px" fontWeight="bold">
+                  048−431−1027
+                </Text>
+              </Flex>
+            </Flex>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
+      <HStack spacing="20px" display={{ base: "none", md: "flex" }}>
         {menu.map((item, index) => (
           <>
             <Link
@@ -78,6 +156,7 @@ function Header({ pageName }: HeaderProps) {
               fontSize={"18px"}
               _hover={{ textDecoration: "none", color: "orange" }}
               color={item.name === pageName ? "orange" : ""}
+              _focus={{ boxShadow: "none !important" }}
             >
               {item.name}
             </Link>
@@ -90,11 +169,16 @@ function Header({ pageName }: HeaderProps) {
           fontSize={"18px"}
           _hover={{ textDecoration: "none", color: "orange" }}
           color={pageName === "店舗案内" ? "orange" : ""}
+          _focus={{ boxShadow: "none !important" }}
         >
           店舗案内
         </Link>
       </HStack>
-      <Flex alignItems="center" onClick={() => window.open("tel:0484311027")}>
+      <Flex
+        alignItems="center"
+        onClick={() => window.open("tel:0484311027")}
+        display={{ base: "none", md: "" }}
+      >
         <FaPhoneVolume fontSize="20px" />
         <Text ml="10px" fontSize="20px" fontWeight="bold">
           048−431−1027

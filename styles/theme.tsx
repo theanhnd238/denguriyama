@@ -25,9 +25,6 @@ const CustomerTheme: Record<string, any> = {
         width: "100%",
         objectFit: "cover",
       },
-      "*::placeholder": {
-        color: mode("gray.400", "whiteAlpha.400"),
-      },
     },
   },
 

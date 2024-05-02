@@ -1,4 +1,13 @@
-import { Box, Link, Divider, Flex, Text, HStack, Icon } from "@chakra-ui/react";
+import {
+  Box,
+  Link,
+  Divider,
+  Flex,
+  Text,
+  HStack,
+  Icon,
+  Button,
+} from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import { FaFacebook } from "react-icons/fa";
