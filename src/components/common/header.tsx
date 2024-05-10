@@ -76,7 +76,7 @@ function Header({ pageName }: HeaderProps) {
         cursor="pointer"
         onClick={() => router.push("/")}
       >
-        <Image h="70%" alt="logo" src="/images/logo.png" />
+        <Image h="auto" alt="logo" src="/images/logo.png" />
       </Flex>
       <IconButton
         isRound={true}
