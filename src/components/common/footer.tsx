@@ -49,6 +49,7 @@ function Footer({ pageName }: FooterProps) {
       fontSize={{ base: "16px", lg: "26px" }}
       w="100%"
       display="flex"
+      justifyContent="center"
     >
       <Flex
         w={{ base: "100%", mid: "85%" }}
@@ -78,7 +79,7 @@ function Footer({ pageName }: FooterProps) {
                   {item.name}
                 </Link>
                 <Box
-                  display={{ base: "none", md: "block" }}
+                  display={{ base: "none", mid: "block" }}
                   w="2px"
                   h="20px"
                   bgColor="#FFFFFF"
