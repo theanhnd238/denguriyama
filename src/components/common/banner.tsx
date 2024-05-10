@@ -8,7 +8,7 @@ interface BannerProps {
 }
 function Banner({ url, pageName }: BannerProps) {
   return (
-    <Box h={{ base: "250px", md: "350px", mid: "650px" }} w="100%">
+    <Box h={{ base: "220px", md: "350px", mid: "650px" }} w="100%">
       <Image w="100%" h="100%" src={url} alt="banner" objectFit="fill" />
       <Header pageName={pageName} />
     </Box>

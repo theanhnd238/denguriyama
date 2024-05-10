@@ -177,7 +177,7 @@ function Header({ pageName }: HeaderProps) {
       <Link
         alignItems="center"
         href="tel:+81484311027"
-        display={{ base: "none", md: "" }}
+        display={{ base: "none", mid: "flex" }}
       >
         <FaPhoneVolume fontSize="20px" />
         <Text ml="10px" fontSize="20px" fontWeight="bold">

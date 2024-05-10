@@ -7,10 +7,12 @@ function HomePageContent() {
   return (
     <Box
       maxW="1280px"
-      w="80%"
+      w={{ mid: "80%" }}
       bgColor={"accent.white"}
       borderRadius="4px"
-      boxShadow=" rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em"
+      boxShadow={{
+        mid: " rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em",
+      }}
       m="20px 0"
     >
       <Flex flexDir="column" alignItems="center" w="100%">
@@ -19,13 +21,23 @@ function HomePageContent() {
           display="flex"
           flexDir="column"
           alignItems="center"
-          p="50px 100px"
+          p={{ base: "20px", md: "50px 100px" }}
           // bgColor="#EFDBC3"
         >
-          <Text textAlign="center" fontSize="42px" mb="20px">
+          <Text
+            textAlign="center"
+            fontSize={{ base: "24px", mid: "42px" }}
+            mb="20px"
+            fontWeight="bold"
+          >
             真心込めて、お客様をお待ちしております。
           </Text>
-          <VStack alignItems="flex-start" fontSize="16px" spacing="10px">
+          <VStack
+            alignItems="flex-start"
+            fontSize="16px"
+            spacing="10px"
+            letterSpacing="1px"
+          >
             <Text>
               蕨駅東口から徒歩２分。2003年4月にオープンした焼肉・ホルモン屋。蕨　ホルモンでんぐり山。
             </Text>

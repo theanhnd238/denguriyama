@@ -47,15 +47,23 @@ function Footer({ pageName }: FooterProps) {
       bgColor="rgba(0,0,0,0.8)"
       color="#ffffff"
       fontSize={{ base: "16px", lg: "26px" }}
+      w="100%"
+      display="flex"
     >
-      <Box maxW={"85%"} margin="0 auto">
-        <Flex flexDirection={"column"}>
+      <Flex
+        w={{ base: "100%", mid: "85%" }}
+        flexDir="column"
+        alignItems="center"
+      >
+        <Flex flexDirection={"column"} w="100%">
           <HStack
+            w="100%"
             spacing={8}
             lineHeight={{ base: "", lg: "60px" }}
             wrap="wrap"
             maxW={{ base: "345px", lg: "none" }}
             justifyContent="center"
+            margin={{ base: "20px 0", mid: "none" }}
           >
             {menu.map((item, index) => (
               <>
@@ -69,7 +77,12 @@ function Footer({ pageName }: FooterProps) {
                 >
                   {item.name}
                 </Link>
-                <Box w="2px" h="20px" bgColor="#FFFFFF" />
+                <Box
+                  display={{ base: "none", mid: "block" }}
+                  w="2px"
+                  h="20px"
+                  bgColor="#FFFFFF"
+                />
               </>
             ))}
             <Link
@@ -107,7 +120,7 @@ function Footer({ pageName }: FooterProps) {
             Coppyright ©︎2024 by DENGURIYAMA. All rights resered
           </Text>
         </Box>
-      </Box>
+      </Flex>
     </Box>
   );
 }
