@@ -6,14 +6,14 @@ import Restaurant from "./restaurant";
 function HomePageContent() {
   return (
     <Box
-      maxW="1280px"
-      w={{ mid: "80%" }}
+      // maxW="1280px"
+      w={{ base: "100%", mid: "80%" }}
       bgColor={"accent.white"}
       borderRadius="4px"
       boxShadow={{
         mid: " rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em",
       }}
-      m="20px 0"
+      m={{ mid: "20px" }}
     >
       <Flex flexDir="column" alignItems="center" w="100%">
         <Box

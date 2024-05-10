@@ -67,7 +67,7 @@ function Header({ pageName }: HeaderProps) {
       color="#ffffff"
       p={{ base: "0 10px", md: "0 50px" }}
       position="absolute"
-      top={{ base: "-40px", md: "-60px" }}
+      top="0"
       left="0"
     >
       <Flex
@@ -76,7 +76,7 @@ function Header({ pageName }: HeaderProps) {
         cursor="pointer"
         onClick={() => router.push("/")}
       >
-        <Image h="auto" alt="logo" src="/images/logo.png" />
+        <Image h="80%" alt="logo" src="/images/logo.png" />
       </Flex>
       <IconButton
         isRound={true}

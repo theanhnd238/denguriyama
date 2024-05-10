@@ -133,7 +133,7 @@ function YakimonoPageContent() {
             </Flex>
           </VStack>
         </Flex>
-        <Text textAlign="center" m="30px 0" fontSize="16px">
+        <Text textAlign="center" m="30px " fontSize="14px">
           ※　その日の仕入状況で一部内容を変更する場合がございます。
         </Text>
       </Flex>
