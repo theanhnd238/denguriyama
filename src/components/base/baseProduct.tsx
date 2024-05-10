@@ -6,7 +6,6 @@ interface BaseProductProps {
   price: string;
   src: string;
   description?: string;
-  rightPrice?: string;
   width?: string;
   height?: string;
 }
@@ -17,7 +16,6 @@ function BaseProduct({
   description,
   height = "200px",
   width = "250px",
-  rightPrice,
 }: BaseProductProps) {
   return (
     <Flex flexDir="column" position="relative">

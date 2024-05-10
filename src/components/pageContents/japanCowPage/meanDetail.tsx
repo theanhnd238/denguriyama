@@ -1,14 +1,23 @@
 import BaseTitleText from "@/components/base/baseTitleText";
-import { Divider, Grid, Text } from "@chakra-ui/react";
+import { Box, Divider, Grid, Text } from "@chakra-ui/react";
 
 function MeanDetail() {
   return (
-    <>
-      <Text textAlign="center" fontSize="48px" fontWeight="bold">
+    <Box display={{ base: "none", md: "block" }} m="20px">
+      {" "}
+      <Text
+        textAlign="center"
+        fontSize={{ base: "24px", mid: "42px" }}
+        fontWeight="bold"
+      >
         牛肉の部位
       </Text>
       <Divider mb="30px" />
-      <Grid templateColumns="repeat(4, 1fr)" gap="10px" justifyItems="center">
+      <Grid
+        templateColumns={{ md: "repeat(3, 1fr)", mid: "repeat(4, 1fr)" }}
+        gap="10px"
+        justifyItems="center"
+      >
         <BaseTitleText
           title="タンモト"
           description="やわらかく栄養たっぷり。美味しい根元部分だけを使用"
@@ -41,14 +50,7 @@ function MeanDetail() {
           title="レバー（肝臓）"
           description="鉄分ビタミンA、B がとても豊富です。"
         />
-      </Grid>
 
-      <Grid
-        templateColumns="repeat(5, 1fr)"
-        gap="10px"
-        m="10px 0"
-        justifyItems="center"
-      >
         <BaseTitleText
           title="ミノサンド"
           subTitle="（第一胃袋）"
@@ -79,8 +81,7 @@ function MeanDetail() {
           description="適度な歯応えで噛めば噛むほどコクのある味です。"
           width="150px"
         />
-      </Grid>
-      <Grid templateColumns="repeat(4, 1fr)" gap="10px" justifyItems="center">
+
         <BaseTitleText
           title="ハラミ（横隔膜）"
           description="赤身肉のように見られますが実はホルモン。"
@@ -98,7 +99,7 @@ function MeanDetail() {
           description="スープでよく使われ噛む程に濃厚な味が広がります。"
         />
       </Grid>
-    </>
+    </Box>
   );
 }
 

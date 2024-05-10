@@ -13,7 +13,7 @@ function SafetyAndSecurity() {
         alignItems="center"
         flexDir={{ base: "column", md: "row" }}
       >
-        <Box w={{ md: "50%" }}>
+        <Box w={{ md: "50%" }} mt={{ base: "20px", md: "0" }}>
           <Image alt="safe" src="/images/safe.png" />
         </Box>
         <VStack

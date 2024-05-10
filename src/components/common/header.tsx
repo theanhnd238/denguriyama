@@ -61,13 +61,13 @@ function Header({ pageName }: HeaderProps) {
     <Flex
       w="100%"
       h={{ base: "40px", md: "60px" }}
-      bgColor="rgba(0, 0, 0, 0.5)"
+      bgColor="rgba(0, 0, 0, 0.8)"
       justifyContent="space-between"
       alignItems="center"
       color="#ffffff"
       p={{ base: "0 10px", md: "0 50px" }}
       position="absolute"
-      top="0"
+      top={{ base: "-40px", md: "-60px" }}
       left="0"
     >
       <Flex
@@ -146,7 +146,7 @@ function Header({ pageName }: HeaderProps) {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-      <HStack spacing="20px" display={{ base: "none", md: "flex" }}>
+      <HStack spacing="20px" display={{ base: "none", mid: "flex" }}>
         {menu.map((item, index) => (
           <>
             <Link

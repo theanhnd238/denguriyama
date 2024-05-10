@@ -7,28 +7,21 @@ interface BasePriceProps {
   price: string;
   subTitle?: string;
   note?: string;
-  width?: string;
 }
-function BasePrice({
-  title,
-  price,
-  subTitle,
-  note,
-  width = "300px",
-}: BasePriceProps) {
+function BasePrice({ title, price, subTitle, note }: BasePriceProps) {
   return (
     <Box marginBottom={{ base: "36px", md: "30px" }}>
       <Box
         display="flex"
         flexDirection={{ base: "column", md: "row" }}
-        fontSize="20px"
+        fontSize={{ base: "16px", md: "20px" }}
         fontWeight="bold"
         justifyContent="space-between"
-        w={width}
+        w={{ base: "152px", md: "300px" }}
       >
         <Box>
           <Flex alignItems="flex-end">
-            <Text mr="10px">{title}</Text>
+            <Text mr={{ base: "0", md: "10px" }}>{title}</Text>
             <span style={{ fontSize: "14px", fontWeight: "normal" }}>
               {note}
             </span>

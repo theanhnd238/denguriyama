@@ -55,14 +55,14 @@ function Footer({ pageName }: FooterProps) {
         flexDir="column"
         alignItems="center"
       >
-        <Flex flexDirection={"column"} w="100%">
+        <Flex flexDirection={"column"} w="100%" alignItems="center">
           <HStack
             w="100%"
             spacing={8}
             lineHeight={{ base: "", lg: "60px" }}
             wrap="wrap"
-            maxW={{ base: "345px", lg: "none" }}
             justifyContent="center"
+            maxW={{ base: "345px", md: "100%" }}
             margin={{ base: "20px 0", mid: "none" }}
           >
             {menu.map((item, index) => (
@@ -78,7 +78,7 @@ function Footer({ pageName }: FooterProps) {
                   {item.name}
                 </Link>
                 <Box
-                  display={{ base: "none", mid: "block" }}
+                  display={{ base: "none", md: "block" }}
                   w="2px"
                   h="20px"
                   bgColor="#FFFFFF"

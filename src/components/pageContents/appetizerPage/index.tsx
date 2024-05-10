@@ -5,14 +5,19 @@ import data from "../../../data/appetizer.json";
 function AppetizerPageContent() {
   return (
     <Box
-      w="80%"
+      w={{ base: "100%", mid: "80%" }}
       bgColor={"accent.white"}
       borderRadius="4px"
-      boxShadow=" rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em"
-      m="20px 0"
-      p="20px"
+      boxShadow={{
+        mid: " rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em",
+      }}
+      m={{ mid: "20px" }}
     >
-      <Text textAlign="center" fontSize="48px" fontWeight="bold">
+      <Text
+        textAlign="center"
+        fontSize={{ base: "36px", mid: "48px" }}
+        fontWeight="bold"
+      >
         前菜・一品料理
       </Text>
       <Divider mb="30px" />

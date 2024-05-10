@@ -1,14 +1,22 @@
 import BaseTitleText from "@/components/base/baseTitleText";
-import { Divider, Grid, Text } from "@chakra-ui/react";
+import { Box, Divider, Grid, Text } from "@chakra-ui/react";
 
 function MeanDetail() {
   return (
-    <>
-      <Text textAlign="center" fontSize="48px" fontWeight="bold">
+    <Box display={{ base: "none", md: "block" }} m="20px">
+      <Text
+        textAlign="center"
+        fontSize={{ base: "36px", mid: "48px" }}
+        fontWeight="bold"
+      >
         豚肉の部位
       </Text>
       <Divider mb="30px" />
-      <Grid templateColumns="repeat(4, 1fr)" gap="10px" justifyItems="center">
+      <Grid
+        templateColumns={{ md: "repeat(3, 1fr)", mid: "repeat(4, 1fr)" }}
+        gap="10px"
+        justifyItems="center"
+      >
         <BaseTitleText
           title="カシラ（こめかみ）"
           description="生肉に近く肉の旨みたっぷりです。"
@@ -41,14 +49,6 @@ function MeanDetail() {
           title="ガツ元（胃）"
           description="硬すぎずシャキシャキとした歯応えです。"
         />
-      </Grid>
-
-      <Grid
-        templateColumns="repeat(3, 1fr)"
-        gap="10px"
-        justifyItems="center"
-        m="10px 0"
-      >
         <BaseTitleText
           title="おっぱい（乳）"
           description="サクサクとした歯応えでやわらかくさっぱりしてます。"
@@ -62,7 +62,7 @@ function MeanDetail() {
           description="コリコリとした歯応えで歯切れよく淡白な味わいです。"
         />
       </Grid>
-    </>
+    </Box>
   );
 }
 

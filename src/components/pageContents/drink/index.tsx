@@ -7,41 +7,46 @@ import BasePrice from "@/components/base/basePrice";
 function DrinkPageContent() {
   return (
     <Box
-      w="80%"
+      w={{ base: "100%", mid: "80%" }}
       bgColor={"accent.white"}
       borderRadius="4px"
-      boxShadow=" rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em"
-      m="20px 0"
-      p="20px"
+      boxShadow={{
+        mid: " rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em",
+      }}
+      m={{ mid: "20px" }}
     >
-      <Text textAlign="center" fontSize="48px" fontWeight="bold">
+      <Text
+        textAlign="center"
+        fontSize={{ base: "36px", mid: "48px" }}
+        fontWeight="bold"
+      >
         ドリンク
       </Text>
       <Divider mb="30px" />
       <Flex justifyContent="space-around">
-        <VStack spacing="20px">
+        <VStack>
           <Box>
             <BaseName name="日本酒" />
-            <Text fontSize="20px" fontWeight="bold">
+            <Text fontSize={{ base: "16px", md: "20px" }} fontWeight="bold">
               季節の日本酒(黒板参照)
             </Text>
           </Box>
           <Box>
             <BaseName name="本格焼酎（90ml）" />
-            <Flex>
+            <Flex flexDir={{ base: "column", md: "row" }} alignItems="center">
               <Text fontSize="20px" fontWeight="bold" mr="15px">
                 【芋】
               </Text>
               <Category name="" data={data.imo} />
             </Flex>
-            <Flex>
+            <Flex flexDir={{ base: "column", md: "row" }} alignItems="center">
               <Text fontSize="20px" fontWeight="bold" mr="15px">
                 【麦】
               </Text>
               <Category name="" data={data.mugi} />
             </Flex>
           </Box>
-          <Box ml="50px">
+          <Box ml={{ base: "", md: "50px" }}>
             <Category name="マッコリ" data={data.maccori} />
           </Box>
         </VStack>
@@ -61,7 +66,7 @@ function DrinkPageContent() {
           </Box>
 
           <Category name="焼酎" data={data.shouchuu1} />
-          <Text textAlign="center" fontSize="14px">
+          <Text textAlign="center" fontSize="12px">
             ※　ボトル焼酎　(３ヶ月間有効)
           </Text>
           <Category name="" data={data.shouchuu2} />

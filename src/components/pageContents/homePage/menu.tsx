@@ -11,7 +11,7 @@ function Menu() {
       <Flex
         bgColor="#EFDBC3"
         w="100%"
-        p="50px 30px"
+        p={{ base: "20px", md: "50px 100px" }}
         justifyContent="space-between"
       >
         <Flex flexDir="column" justifyContent="space-between">
