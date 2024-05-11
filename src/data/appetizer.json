@@ -1,48 +1,54 @@
 {
   "topLeft": [
-    { "title": "白菜キムチ", "price": "" },
-    { "title": "カクテギ", "price": "" },
-    { "title": "オイキムチ", "price": "" },
-    { "title": "キムチ盛り合わせ", "price": "" }
+    { "title": "白菜キムチ", "price": "440" },
+    { "title": "カクテギ", "price": "440" },
+    { "title": "オイキムチ", "price": "440" },
+    { "title": "キムチ盛り合わせ", "price": "825" }
   ],
   "bottomLeft": [
-    { "title": "ナムル", "price": "" },
-    { "title": "韓国風サラダ", "price": "" },
-    { "title": "キューリサラダ", "price": "" },
+    { "title": "ナムル", "price": "550" },
+    { "title": "韓国風サラダ", "price": "605" },
+    { "title": "キューリサラダ", "price": "550" },
     { "title": "トマトサラダ", "price": "" },
+    { "title": "トマトとクリームチーズのキムチ和え", "price": "550" },
     { "title": "サンチュ", "price": "" },
     {
       "title": "おかわりキャベツ",
-      "price": "",
+      "price": "220",
       "note": "（小）"
     },
     {
       "title": "おかわりキャベツ",
-      "price": "",
+      "price": "330",
       "note": "（大）"
     }
   ],
   "topRight": [
-    { "title": "センマイ刺し", "price": "" },
-    { "title": "ハチノス刺し", "price": "" },
-    { "title": "ガツ刺し", "price": "" },
-    { "title": "チャンジャ", "price": "" },
+    { "title": "センマイ刺し", "price": "770" },
+    { "title": "ハチノス刺し", "price": "770" },
+    { "title": "ガツ刺し", "price": "770" },
+    { "title": "チャンジャ", "price": "385" },
     {
       "title": "豚足",
-      "price": "",
-      "note": "(骨ありor骨無し)"
+      "price": "660",
+      "note": "(骨あり)"
+    },
+    {
+      "title": "豚足",
+      "price": "770",
+      "note": "(骨無し)"
     },
 
-    { "title": "ケジャン", "price": "" },
-    { "title": "チジミ", "price": "" },
-    { "title": "牛すじ煮込み", "price": "" },
-    { "title": "韓国風ヤッコ", "price": "" },
-    { "title": "韓国のり", "price": "" },
+    { "title": "ケジャン", "price": "990" },
+    { "title": "チジミ", "price": "660" },
+    { "title": "牛すじ煮込み", "price": "440" },
+    { "title": "韓国風ヤッコ", "price": "440" },
+    { "title": "韓国のり", "price": "330" },
     {
       "title": "辛納豆",
-      "price": "",
+      "price": "550",
       "note": "(韓国のり付き)"
     },
-    { "title": "酢もつ", "price": "" }
+    { "title": "酢もつ", "price": "660" }
   ]
 }

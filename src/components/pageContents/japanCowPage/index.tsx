@@ -16,7 +16,7 @@ function JapanCowPageContent() {
       m={{ mid: "20px" }}
     >
       <MeanDetail />
-      <Box m="40px 0" w="100%">
+      {/* <Box m="40px 0" w="100%">
         <Text
           textAlign="center"
           fontSize={{ base: "36px", mid: "48px" }}
@@ -39,7 +39,7 @@ function JapanCowPageContent() {
             />
           ))}
         </HStack>
-      </Box>
+      </Box> */}
 
       <Text
         textAlign="center"

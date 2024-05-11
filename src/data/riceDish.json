@@ -1,38 +1,42 @@
 {
   "soup": {
-    "price": "",
+    "price": "550",
     "topping1": [
-      { "title": "玉子", "price": "" },
-      { "title": "わかめ", "price": "" },
-      { "title": "野菜", "price": "" },
-      { "title": "豆腐", "price": "" }
+      { "title": "玉子", "price": "55" },
+      { "title": "わかめ", "price": "55" },
+      { "title": "野菜", "price": "105" },
+      { "title": "豆腐", "price": "105" }
     ],
     "topping2": [
-      { "title": "辛口ユッケジャン", "price": "", "note": "(肉)" },
-      { "title": "辛口テクタン", "price": "", "note": "(魚)" },
-      { "title": "ごはん", "price": "" },
-      { "title": "うどん", "price": "" }
+      { "title": "辛口ユッケジャン", "price": "220", "note": "(肉)" },
+      { "title": "辛口テクタン", "price": "220", "note": "(魚)" },
+      { "title": "ごはん", "price": "220" },
+      { "title": "うどん", "price": "253" }
     ]
   },
   "other": [
-    { "title": "石焼ビビンバ", "price": "", "subTitle": "(小白スープ付き)" },
-    { "title": "ビビンバ", "price": "", "subTitle": "(小白スープ付き)" },
-    { "title": "冷麺", "price": "", "note": "(白麺or黒麺)" },
-    { "title": "ライス", "price": "" },
-    { "title": "大ライス", "price": "" }
+    {
+      "title": "石焼ビビンバ",
+      "price": "1100",
+      "subTitle": "(小白スープ付き)"
+    },
+    { "title": "ビビンバ", "price": "880", "subTitle": "(小白スープ付き)" },
+    { "title": "冷麺", "price": "990", "note": "(白麺or黒麺)" },
+    { "title": "ライス", "price": "220" },
+    { "title": "大ライス", "price": "330" }
   ],
   "noodle": [
-    { "title": "豆腐チゲ", "price": "" },
-    { "title": "野菜チゲ", "price": "" },
-    { "title": "ラーメンチゲ", "price": "" }
+    { "title": "豆腐チゲ", "price": "935" },
+    { "title": "野菜チゲ", "price": "935" },
+    { "title": "ラーメンチゲ", "price": "935" }
   ],
   "dessert": [
     {
       "title": "黒糖ゼリー",
-      "price": "",
+      "price": "385",
       "subTitle": "【沖縄産を使用した手作りゼリー】"
     },
-    { "title": "バニラアイス", "price": "" },
-    { "title": "月替わりアイス", "price": "" }
+    { "title": "バニラアイス", "price": "330" },
+    { "title": "月替わりアイス", "price": "330" }
   ]
 }

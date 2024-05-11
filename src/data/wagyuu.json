@@ -17,32 +17,32 @@
     }
   ],
   "topLeft": [
-    { "title": "和牛ハラミ", "price": "" },
-    { "title": "和牛カルビ", "price": "" },
-    { "title": "和牛上カルビ", "price": "" },
-    { "title": "和牛ゲタカルビ（中落ち）", "price": "" }
+    { "title": "和牛ハラミ", "price": "1595" },
+    { "title": "和牛カルビ", "price": "1210" },
+    { "title": "和牛上カルビ", "price": "1815" },
+    { "title": "和牛ゲタカルビ（中落ち）", "price": "1485" }
   ],
   "topRight": [
-    { "title": "和牛ロース", "price": "" },
-    { "title": "和牛タンモト", "price": "" },
-    { "title": "和牛タンシタ", "price": "" }
+    { "title": "和牛ロース", "price": "1210" },
+    { "title": "和牛タンモト", "price": "2420" },
+    { "title": "和牛タンシタ", "price": "1155" }
   ],
   "bottomLeft": [
-    { "title": "ホルモン", "price": "" },
-    { "title": "上ミノ", "price": "" },
-    { "title": "ミノサンド", "price": "" },
-    { "title": "ハチノス", "price": "" },
-    { "title": "センマイ", "price": "" },
-    { "title": "ギャラ", "price": "" },
-    { "title": "コプチャン", "price": "" }
+    { "title": "ホルモン", "price": "935" },
+    { "title": "上ミノ", "price": "990" },
+    { "title": "ミノサンド", "price": "715" },
+    { "title": "ハチノス", "price": "825" },
+    { "title": "センマイ", "price": "715" },
+    { "title": "ギャラ", "price": "715" },
+    { "title": "コプチャン", "price": "825" }
   ],
   "bottomRight": [
-    { "title": "ハツ", "price": "" },
-    { "title": "ハツモト", "price": "" },
-    { "title": "レバー", "price": "" },
-    { "title": "シビレ", "price": "" },
-    { "title": "テール", "price": "" },
-    { "title": "つらみ", "price": "" },
-    { "title": "ウルテ", "price": "" }
+    { "title": "ハツ", "price": "715" },
+    { "title": "ハツモト", "price": "715" },
+    { "title": "レバー", "price": "825" },
+    { "title": "シビレ", "price": "825" },
+    { "title": "テール", "price": "935" },
+    { "title": "つらみ", "price": "935" },
+    { "title": "ウルテ", "price": "715" }
   ]
 }
