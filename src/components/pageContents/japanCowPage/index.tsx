@@ -35,7 +35,7 @@ function JapanCowPageContent() {
               title={item.title}
               price={item.price}
               src={item.src}
-              height="320px"
+              width="320px"
             />
           ))}
         </HStack>
