@@ -78,7 +78,7 @@ function DrinkPageContent() {
         <Text textAlign="center" fontSize="14px">
           ✋ストップ！20歳未満飲酒・飲酒運転。妊娠中や授乳期の飲酒はやめましょう。お酒は楽しく適量で。
         </Text>
-        <Text textAlign="center" fontSize="14px" mt="15px">
+        <Text textAlign="center" fontSize="14px" m="15px 0">
           ※　表示価格はすべて税込価格です。
         </Text>
       </Box>

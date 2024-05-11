@@ -30,7 +30,7 @@ function AppetizerPageContent() {
           </VStack>
           <Category name="一品" data={data.topRight} />
         </Flex>
-        <Text textAlign="center" fontSize="14px" mt="15px">
+        <Text textAlign="center" fontSize="14px" m="15px 0">
           ※　表示価格はすべて税込価格です。
         </Text>
       </Box>
